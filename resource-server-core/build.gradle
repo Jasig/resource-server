@@ -1,0 +1,20 @@
+description = "Core API for the Resource Server project"
+
+dependencies {
+    compile project(":resource-server-api")
+
+    compile "commons-codec:commons-codec:${commonsCodecVersion}"
+    compile "commons-io:commons-io:${commonsIoVersion}"
+    compile "commons-lang:commons-lang:${commonsLangVersion}"
+    compile "org.slf4j:slf4j-api:${slf4jVersion}"
+    compile "org.slf4j:jcl-over-slf4j:${slf4jVersion}"
+    compile "com.yahoo.platform.yui:yuicompressor:${yuiVersion}"
+    compile "com.sun.xml.bind:jaxb-xjc:${jaxbImplVersion}"
+    compile "com.sun.xml.bind:jaxb-impl:${jaxbImplVersion}"
+    compile "javax.xml.bind:jaxb-api:${jaxbApiVersion}"
+
+    testCompile "junit:junit:${junitVersion}"
+    testCompile "ch.qos.logback:logback-classic:${logbackVersion}"
+    testCompile "org.springframework:spring-core:${springVersion}"
+    testCompile "xmlunit:xmlunit:${xmlUnitVersion}"
+}

@@ -1,0 +1,5 @@
+task copyData(type: Copy) {
+    from "${projectDir}/src/main/webapp/rs" into "${buildDir}/rs"
+}
+
+install.finalizedBy(copyData)
